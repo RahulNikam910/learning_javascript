@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // array modify and delete
+        var a = ["Rahul", 21, "Male", "Software Developer"];
+        document.write(a + "<br>");
+
+        a[1] = 22;
+        document.write(a + "<br>");
+        delete a[3];
+        document.write(a + "<br>");
+
+    </script>
+    <hr>
+    <script>
+        var b = [4,8,2,5,9,6,1,7,10,15,19,77,28,99,87,2];
+        document.write(b + "<br>");
+        b.sort();
+        document.write(b + "<br>");
+        b.reverse();
+        document.write(b + "<br>")
+    </script>
+    <hr>
+    <script>
+        var c = [4,8,2,5,9,6,1,7,10,15,19,77,28,99,87,2];
+        document.write(c + "<br>");
+        c.pop();
+        c.pop();
+        document.write(c + "<br>");
+        c.push(79);
+        c.push(69);
+        document.write(c + "<br>");
+    </script>
+    <hr>
+    <script>
+        var c = [4,8,2,5,9,6,1,7,10,15,19,77,28,99,87,2];
+        document.write(c + "<br>");
+        c.shift();
+        c.shift();
+        document.write(c + "<br>");
+        c.unshift(79);
+        c.unshift(69);
+        document.write(c + "<br>");
+    </script>
+    <hr>
+    <script>
+        var d = ["Rahul","Yash","Ashish","Pratik"];
+        var e = ["Gadge","Shreyash","Aditya","Atharva"];
+        var g = ["Kartik","Shivam","Rakesh"];
+
+        var f = d.concat(e,g);
+        document.write(f + "<br>");
+        var g = f.join("/");
+        document.write(z + "<br>");
+    </script>
+</body>
+</html>

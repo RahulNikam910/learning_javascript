@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        //Arithmetic -,+,*,/,++,--,**
+        var a = 10;
+        var b = 3;
+        var c = a + b; //13
+        c++; //increement by 1
+        c--; //decrement by 1
+        document.write(c + "<br>");
+    </script>
+    <h3>Assignment operator</h3>
+    <br>
+    <script>
+        // Assignment Operator =, += -=
+        var x= 10;
+        var y= 2;
+        //x = x + y
+        x += y;
+        document.write(x + "<br>");
+        document.write(y);
+    </script>
+    <h3>Comparison Operator</h3>
+    <br>
+    <script>
+        // Comparison Operator ==,===,<,>,<=,>=,!=
+
+        var p = 10;
+        var q = "10"
+        if(p==q){
+            document.write("p and q are equal");   // == : it checks only value not the data type
+        }
+        else{
+            document.write("p and q are not equal"); //=== : it checks only value and the data type
+        }
+    </script>
+    <br>
+    <h3>Logical operator</h3>  
+    <script>
+        // && : AND Operator :true + true = true
+        var age = 18;
+        if(age >= 18 && age <= 100){
+            document.write("ELigible for Voting");
+        }else{
+            document.write("Not eligible for Voting");
+        }
+    </script>
+    <br>
+    <script>
+        // || : OR Operator : at least one true is needed for whole operation to become true
+        var day = "Saturday";
+        if(day === "Saturday" || day === "Sunday"){
+            document.write("It's Weekend");
+        }else{
+            document.write("It's Weekdays");
+        }
+    </script>
+    <!-- ! not operator -->
+    <br>
+    <h3>Ternary Operator</h3>  
+    <script>
+        var age = 19;
+        var eligibility = (age >= 18) ? "Eligible for vote" : "Not Eligible";
+        document.write(eligibility);
+    </script>
+</body>
+</html>
