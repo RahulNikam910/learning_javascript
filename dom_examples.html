@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <!-- Change Text Example -->
+    <h2 id="title">Hello! It's Rahul</h2>
+    <button onclick="changeText()">Change Text</button>
+    <script>
+        function changeText(){
+            document.getElementById("title").innerHTML = "Again It's Rahul"
+        }
+    </script>
+    <hr>
+    <!-- Change Color Example -->
+     <h1 id="text">Change Color Example</h1>
+     <button onclick="changeColor()">Change Color</button>
+     <script>
+        function changeColor(){
+            document.getElementById("text").style.color = "blue";
+        }
+     </script>
+     <hr>
+    <!-- Change Image Example -->
+     <img id="img" src="images/cafe.png" width="200"/><br>
+     <button onclick="changeImage()">Change Image</button>
+     <script>
+        function changeImage(){
+            document.getElementById("img").src = "images/Chess Board.webp";
+        }
+     </script>
+     <hr>
+     <!-- get input from user and display it on screen -->
+      <label for="name">Enter Name</label>
+      <input type="text" id="name" placeholder="Enter Full Name"/>
+      <button onclick="displayName()">Submit</button>
+      <h2 id="output"></h2>
+
+      <script>
+        function displayName(){
+            let name = document.getElementById("name").value;
+            document.getElementById("output").innerHTML = "Hello! " + name;
+        }
+      </script>
+      <!-- Increase and Decrease Example -->
+      <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur minus laudantium, voluptas ad sunt inventore, corporis perspiciatis itaque, reiciendis quibusdam voluptatum. Repudiandae, minus maiores enim quia consequatur impedit animi ipsam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo natus corporis eaque et repellat pariatur, amet maiores tenetur? Fuga, qui ipsa in recusandae fugit est quos ab odio repudiandae aut?</p>
+      <button onclick="increase()">+</button>
+      <button onclick="decrease()">-</button>
+      <script>
+        let size = 16;
+        function increase(){
+            size++
+            document.getElementById("para").style.fontSize = size + "px";
+        }
+        function decrease(){
+            size--
+            document.getElementById("para").style.fontSize = size + "px";
+        }
+      </script>
+      <hr>
+      <!-- Toggle : Dark Mode Example -->
+       <button onclick="toggleTheme()">Dark Mode</button>
+       <style>
+        .body{
+            background-color: white;
+            color: black;
+        }
+        .dark_mode{
+            background-color: black;
+            color: white;
+        }
+       </style>
+       <script>
+        function toggleTheme(){
+            document.body.classList.toggle("dark_mode");
+        }
+       </script>
+</body>
+</html>
